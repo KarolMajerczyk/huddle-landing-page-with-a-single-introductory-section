@@ -1,23 +1,4 @@
-/* # Front-end Style Guide
-
-## Layout
-
-The designs were created to the following widths:
-
-- Mobile: 375px
-- Desktop: 1440px
-
-## Colors
-
-### Primary
-
-- Violet: hsl(257, 40%, 49%)
-- Soft Magenta: hsl(300, 69%, 71%)
-
-## Typography
-
-### Headings
-
+/*
 - Family: [Poppins](https://fonts.google.com/specimen/Poppins)
 - Weights: 400, 600
 
@@ -33,3 +14,108 @@ For the social icons, you can use a font icon library. Some suggestions can be f
 - [Font Awesome](https://fontawesome.com/)
 - [IcoMoon](https://icomoon.io/)
 - [Ionicons](https://ionicons.com/) */
+
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap");
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+
+:root {
+  --color-violet: hsl(257, 40%, 49%);
+  --color-soft-magenta: hsl(300, 69%, 71%);
+  --color-pure-white: hsl(0, 100%, 100%);
+}
+
+html {
+  color-scheme: dark light;
+}
+
+body {
+  min-height: 100vh;
+  background: var(--color-violet);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  /* Mobile: 375px
+  Desktop: 1440px */
+}
+
+img,
+picture,
+svg,
+video {
+  display: block;
+  max-width: 100%;
+}
+
+.main-content {
+  max-width: 1440px;
+  height: 800px;
+  background: var(--color-violet);
+  background-image: url(./images/bg-desktop.svg);
+  object-fit: cover;
+
+  padding: 64px 80px 40px 80px;
+}
+
+.brand-logo {
+  margin-bottom: 104px;
+  width: 200px;
+  height: 32px;
+}
+
+.community-preview {
+  display: flex;
+  gap: 59px;
+}
+
+.preview-image {
+  width: 696px;
+  height: 493px;
+}
+
+.preview-details {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-items: flex-start;
+}
+
+.preview-title {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 60px;
+  color: var(--color-pure-white);
+}
+
+.preview-description {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  color: var(--color-pure-white);
+}
+
+.register-button {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  color: hsl(257, 40%, 49%);
+  padding: 13px 63px 16px 64px;
+  border-radius: 28px;
+
+  border: none;
+}
